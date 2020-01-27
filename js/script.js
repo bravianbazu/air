@@ -38,6 +38,13 @@ function capture(payload) {
     // payload.score = 0;
     console.log("lift off!!");
     setTimeout(function(){ audio.play(); }, 10);
+    setTimeout(
+	    function(
+	    {
+              audio.pause();
+    	      audio.currentTime = 0;
+	    }));
+	  
   }
 }
 
