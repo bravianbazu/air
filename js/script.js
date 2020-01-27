@@ -23,7 +23,6 @@ function capture(payload) {
 	score.textContent = payload.score;
   if (payload.score > 100) {
     console.log("lift off!!");
-    getchord();
     audio.play();
   }
 }
