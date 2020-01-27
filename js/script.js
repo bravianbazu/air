@@ -38,14 +38,6 @@ function capture(payload) {
     console.log("lift off!!");
     audio.play();
 //     setTimeout(function(){ audio.play(); }, 10);
-    setTimeout(
-	    function()
-	    {
-              audio.pause();
-    	      audio.currentTime = 0;
-	    }, 300);
-	  
-  }
 }
 
 DiffCamEngine.init({
