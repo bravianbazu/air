@@ -30,8 +30,8 @@ function capture(payload) {
 	score.textContent = payload.score;
 	
   //Audio controls
-	getchord();
   if (payload.score > 50) {
+    getchord();
     payload.score = 0;    
     console.log("lift off!!");
     audio.play();
