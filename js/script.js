@@ -24,20 +24,20 @@ function initError() {
 	alert('Something went wrong.');
 }
 
-setInterval(getchord, 250);
+setInterval(getchord, 50);
 
 function capture(payload) {
 	score.textContent = payload.score;
 	
   //Audio controls
 	
-  if (payload.score > 300) {
+  if (payload.score > 350) {
     audio.pause();
     audio.currentTime = 0;
     payload.score = 0;    
     // payload.score = 0;
     console.log("lift off!!");
-    setTimeout(function(){ audio.play(); }, 50);
+    setTimeout(function(){ audio.play(); }, 10);
   }
 }
 
