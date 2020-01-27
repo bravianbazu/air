@@ -2,7 +2,7 @@ function getchord() {
   // alert('hi');
   //amajor
   if ( (E == 1) && (A == 1) && (C_ == 1) ){
-      audio.src = 'chords/amajor.wav';
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Famajor.wav?v=1580127638637';
       }
       
   //cmajor
@@ -21,7 +21,7 @@ function getchord() {
   }
   //fmajor
   else if ((f == 1) && (C == 1) && (A == 1) && (Fd == 1)){
-      audio.src = 'chords/fmajor.wav'
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Ffmajor.wav?v=1580127634627'
     
   }
   //gmajor
