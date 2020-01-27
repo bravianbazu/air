@@ -28,7 +28,7 @@ function initError() {
 function capture(payload) {
 	score.textContent = payload.score;
   
-  if (payload.score > 300) {
+  if (payload.score > 350) {
     audio.pause();
     audio.currentTime = 0;
     payload.score = 0;
