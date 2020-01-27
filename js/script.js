@@ -31,7 +31,7 @@ function capture(payload) {
 	
   //Audio controls
 	
-  if (payload.score > 400) {
+  if (payload.score > 350) {
 
     payload.score = 0;    
     // payload.score = 0;
