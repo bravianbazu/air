@@ -34,9 +34,7 @@ function capture(payload) {
   if (payload.score > 300) {
     audio.pause();
     audio.currentTime = 0;
-    payload.score = 0;
-    getchord();
-    
+    payload.score = 0;    
     // payload.score = 0;
     console.log("lift off!!");
     setTimeout(function(){ audio.play(); }, 50);
