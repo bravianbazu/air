@@ -54,30 +54,26 @@ canvas {
   border:1px solid black;
 }
 
+
  .load {
+   background:white;
 position:absolute;
  z-index:500;
 width:100%;
 height:100%;
 text-align:center;
 margin:auto;
-  -webkit-animation: disappear 1s forwards ; /* Safari */
-  animation: disappear 1s forwards ;
+  -webkit-animation: disappear 10s forwards ; /* Safari */
+  animation: disappear 10s forwards ;
 }
   
 .loader1 {
 	position:absolute;
    margin:auto;
-    top:40%;
      left:0px;
     right:0px;
-  border: 10px solid rgba(255, 255, 255, 0);
-  border-radius: 50%;
-  border-top: 10px solid white;
-  width: 20px;
-  height: 20px;
-  -webkit-animation: spin 1s linear infinite; /* Safari */
-  animation: spin 1s linear infinite;
+  width: 50%;
+  top:10%;
 }
 
 /* Safari */
@@ -92,4 +88,5 @@ margin:auto;
    80% {opacity:1; width:100% }
   100% {opacity: 0;  width:0%;}
 }
+
 
