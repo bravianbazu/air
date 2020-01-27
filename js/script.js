@@ -36,7 +36,8 @@ function capture(payload) {
     
     // payload.score = 0;
     console.log("lift off!!");
-    setTimeout(function(){ audio.play(); }, 1);
+    audio.play();
+    setTimeout(function(){  }, 1);
   }
 }
 
