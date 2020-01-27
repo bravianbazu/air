@@ -24,18 +24,20 @@ function initError() {
 	alert('Something went wrong.');
 }
 
-// setInterval(getchord, 50);
+setInterval(getchord, 50);
 
 function capture(payload) {
 	score.textContent = payload.score;
-	
-  //Audio controls
-  if (payload.score > 50) {
-    getchord();
-    payload.score = 0;    
+  
+  if (payload.score > 400) {
+    audio.pause();
+    audio.currentTime = 0;
+    payload.score = 0;
+    
+    // payload.score = 0;
     console.log("lift off!!");
-    audio.play();
-}
+    setTimeout(function(){ audio.play(); }, 1);
+  }
 }
 
 DiffCamEngine.init({
