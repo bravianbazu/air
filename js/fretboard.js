@@ -81,7 +81,7 @@ function reset() {
   // console.log("All Reset");
 }
 
-setInterval(reset, 250);
+setInterval(reset, 500);
 
 // Log events flag
 var logEvents = false;
