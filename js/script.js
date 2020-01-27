@@ -32,8 +32,7 @@ function capture(payload) {
   //Audio controls
 	
   if (payload.score > 400) {
-    audio.pause();
-    audio.currentTime = 0;
+
     payload.score = 0;    
     // payload.score = 0;
     console.log("lift off!!");
