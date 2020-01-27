@@ -32,7 +32,7 @@ function capture(payload) {
   //Audio controls
 	
   if (payload.score > 100) {
-    	
+    audio.currentTime = 2;
     payload.score = 0;    
     console.log("lift off!!");
     audio.play();
