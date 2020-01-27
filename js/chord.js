@@ -7,16 +7,16 @@ function getchord() {
       
   //cmajor
   else if ((C == 1) && (E == 1) && (Ca == 1)){
-      audio.src = 'chords/cmajor.wav';
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
       }
   //dmajor
   else if ((f_ == 1) && (D == 1) && (A == 1)){
-      audio.src = 'chords/dmajor.wav'
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fdmajor.wav?v=1580127634501'
     
   }
   //emajor
   else if ((G_ == 1) && (E == 1) && (B_ == 1)){
-      audio.src = 'chords/emajor.wav'
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Femajor.wav?v=1580127634332'
     
   }
   //fmajor
@@ -26,7 +26,7 @@ function getchord() {
   }
   //gmajor
   else if ((B == 1) && (G == 1) && (g == 1)){
-      audio.src = 'chords/gmajor.wav'
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fgmajor.wav?v=1580127634513'
    
   }
 }
