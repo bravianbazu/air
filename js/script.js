@@ -37,6 +37,7 @@ function capture(payload) {
     console.log("lift off!!");
     audio.play();
 }
+}
 
 DiffCamEngine.init({
 	video: video,
