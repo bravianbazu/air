@@ -31,7 +31,7 @@ function capture(payload) {
 	
   //Audio controls
 	
-  if (payload.score > 200) {
+  if (payload.score > 100) {
     	
     payload.score = 0;    
     console.log("lift off!!");
