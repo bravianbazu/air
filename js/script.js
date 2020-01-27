@@ -34,10 +34,8 @@ function capture(payload) {
   if (payload.score > 350) {
 
     payload.score = 0;    
-    // payload.score = 0;
     console.log("lift off!!");
     audio.play();
-//     setTimeout(function(){ audio.play(); }, 10);
 }
 
 DiffCamEngine.init({
