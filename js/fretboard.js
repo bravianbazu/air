@@ -133,6 +133,7 @@ function update_background(ev) {
           g = 1;
           break;
       }
+        
       
       
       
@@ -227,7 +228,8 @@ function end_handler(ev) {
     ev.target.style.background = "white";
     ev.target.style.border = "1px solid black";
     
-    F = 0;
+      
+  F = 0;
   F_ = 0;
   G = 0;
 
