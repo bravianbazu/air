@@ -70,73 +70,7 @@ function update_background(ev) {
   switch (ev.targetTouches.length) {
     case 1:
       // Single tap`
-      ev.target.style.background = "yellow";
-
-      switch (ev.target.id) {
-          case "F":
-          F = 1;
-          break;
-          case "F_":
-          F_ = 1;
-          break;
-          case "G":
-          G = 1;
-          break;
-          
-          case "C":
-          C = 1;
-          break;
-          case "C_":
-          C_ = 1;
-          break;
-          case "D":
-          D = 1;
-          break;
-          
-          case "G_":
-          G_ = 1;
-          break;
-          case "A":
-          A = 1;
-          break;
-          case "A_":
-          A_ = 1;
-          break;
-          
-          case "D_":
-          D_ = 1;
-          break;
-          case "E":
-          E = 1;
-          break;
-          case "Fd":
-          Fd = 1;
-          break;
-
-          case "A_a":
-          A_a = 1;
-          break;
-          case "B":
-          B = 1;
-          break;
-          case "Ca":
-          Ca = 1;
-          break;
-          
-          case "f":
-          f = 1;
-          break;
-          case "f_":
-          f_ = 1;
-          break;
-          case "g":
-          g = 1;
-          break;
-      }
-        
-      
-      
-      
+      ev.target.style.background = "yellow";   
       break;
     case 2:
       // Two simultaneous touches
@@ -195,6 +129,61 @@ function start_handler(ev) {
   }
   if (logEvents) log("touchStart", ev, true);
   update_background(ev);
+  switch (ev.target.id) {
+          case "F":
+          return F = 1;
+          
+          case "F_":
+          return F_ = 1;
+          
+          case "G":
+          return G = 1;
+          
+          case "C":
+          return C = 1;
+          
+          case "C_":
+          return C_ = 1;
+          
+          case "D":
+          return D = 1;
+          
+          case "G_":
+          return G_ = 1;
+          
+          case "A":
+          return A = 1;
+          
+          case "A_":
+          return A_ = 1;
+          
+          case "D_":
+          return D_ = 1;
+          
+          case "E":
+          return E = 1;
+          
+          case "Fd":
+          return Fd = 1;
+
+          case "A_a":
+          return A_a = 1;
+          
+          case "B":
+          return B = 1;
+          
+          case "Ca":
+          return Ca = 1;
+          
+          case "f":
+          return f = 1;
+          
+          case "f_":
+          return f_ = 1;
+          
+          case "g":
+          return g = 1;
+      }
 }
 
 function move_handler(ev) {
