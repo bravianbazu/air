@@ -1,10 +1,17 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+
+//=======================================================
+
+//Name: Air
+
+//Authors: Mphatso Simbao
+
+//=======================================================
 
 
-console.log("hi");
+// ========================================================
+// Setup 
+// ========================================================
 
-const audio = document.querySelector('#audio')
 
 var video = document.getElementById('video');
 var canvas = document.getElementById('motion');
@@ -18,12 +25,16 @@ function initError() {
 	alert('Something went wrong.');
 }
 
-
 function capture(payload) {
 	score.textContent = payload.score;
-  if (payload.score > 100) {
+  
+  if (payload.score > 300) {
+    audio.pause();
+    audio.currentTime = 0;
+    payload.score = 0;
+    // payload.score = 0;
     console.log("lift off!!");
-    audio.play();
+    setTimeout(function(){ audio.play(); }, 50);
   }
 }
 
