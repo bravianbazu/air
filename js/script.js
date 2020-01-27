@@ -31,7 +31,7 @@ function capture(payload) {
 	
   //Audio controls
 	
-  if (payload.score > 450) {
+  if (payload.score > 400) {
     audio.pause();
     audio.currentTime = 0;
     payload.score = 0;    
