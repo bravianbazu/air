@@ -52,33 +52,7 @@ function reset() {
   //gmajor
   else if ((B == 1) && (G == 1) && (g == 1)){
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fgmajor.wav?v=1580127634513'
-      }
-  
-  F = 0;
-  F_ = 0;
-  G = 0;
-
-  C = 0;
-  C_ = 0;
-  D = 0;
-
-  G_ = 0;
-  A = 0;
-  A_ = 0;
-
-  D_ = 0;
-  E = 0;
-  Fd = 0;
-
-  A_a = 0;
-  B = 0;
-  Ca = 0;
-
-  f = 0;
-  f_ = 0;
-  g = 0;
-
-  // console.log("All Reset");
+  }
 }
 
 setInterval(reset, 500);
@@ -285,6 +259,30 @@ function end_handler(ev) {
     // Restore background and border to original values
     ev.target.style.background = "white";
     ev.target.style.border = "1px solid black";
+    
+    F = 0;
+  F_ = 0;
+  G = 0;
+
+  C = 0;
+  C_ = 0;
+  D = 0;
+
+  G_ = 0;
+  A = 0;
+  A_ = 0;
+
+  D_ = 0;
+  E = 0;
+  Fd = 0;
+
+  A_a = 0;
+  B = 0;
+  Ca = 0;
+
+  f = 0;
+  f_ = 0;
+  g = 0;
   }
 }
 
