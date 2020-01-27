@@ -256,7 +256,7 @@ function end_handler(ev) {
   if (ev.targetTouches.length == 0) {
     // Restore background and border to original values
     ev.target.style.background = "white";
-    ev.target.style.border = "2px solid black";
+    ev.target.style.border = "1px solid black";
   }
 }
 
