@@ -24,13 +24,13 @@ function initError() {
 	alert('Something went wrong.');
 }
 
-setInterval(getchord, 50);
+// setInterval(getchord, 50);
 
 function capture(payload) {
 	score.textContent = payload.score;
 	
   //Audio controls
-	
+	getchord();
   if (payload.score > 50) {
     payload.score = 0;    
     console.log("lift off!!");
