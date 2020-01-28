@@ -29,7 +29,7 @@ setInterval(getchord, 50);
 function capture(payload) {
 	score.textContent = payload.score;
   
-  if (payload.score > 400) {
+  if (payload.score > 350) {
 
     // payload.score = 0;
     console.log("lift off!!");
