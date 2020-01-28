@@ -29,7 +29,7 @@ setInterval(getchord, 50);
 function capture(payload) {
 	score.textContent = payload.score;
   
-  if (payload.score > 470) {
+  if (payload.score > 450) {
     audio.pause();
     audio.currentTime = 0;
     payload.score = 0;
