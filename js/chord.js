@@ -15,7 +15,7 @@ function getchord() {
     
   }
   //emajor
-  else if ((G_ == 1) && (E == 1) && (B_ == 1)){
+  else if ((G_ == 1) && (E == 1) && (B == 1)){
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Femajor.wav?v=1580127634332'
     
   }
@@ -32,9 +32,7 @@ function getchord() {
   else if ((f == 1)) {
     audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
   }
-  else {
-     audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
-  }
+
 
 }
 
