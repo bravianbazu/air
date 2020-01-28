@@ -29,5 +29,12 @@ function getchord() {
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fgmajor.wav?v=1580127634513'
    
   }
+  else if ((f == 1)) {
+    audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
+  }
+  else {
+     audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
+  }
+
 }
 
