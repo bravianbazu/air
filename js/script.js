@@ -29,15 +29,12 @@ setInterval(getchord, 50);
 function capture(payload) {
 	score.textContent = payload.score;
   
-  if (payload.score > 450) {
-	  payload.score = 0;
+  if (payload.score > 400) {
 
-    
-    
     // payload.score = 0;
     console.log("lift off!!");
     audio.play();
-    setTimeout(function(){  }, 1);
+
   }
 }
 
