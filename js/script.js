@@ -29,7 +29,7 @@ setInterval(getchord, 50);
 function capture(payload) {
 	score.textContent = payload.score;
   
-  if (payload.score > 120) {
+  if (payload.score > 170) {
     audio.pause();
     audio.currentTime = 0;
     console.log("lift off!!");
