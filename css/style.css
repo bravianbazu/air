@@ -4,7 +4,6 @@ body {
 	margin: 20px;
 	font: 1.5em/1.2 sans-serif;
 	text-align: center;
-	width:70%;
 }
 
 position{
@@ -35,7 +34,7 @@ canvas {
 
 
 #fretboard{
-  width:100%;
+  width:70%;
   height:100%;
    position:absolute;
   top:0%;
