@@ -25,7 +25,7 @@ function capture(payload) {
   // Note: window.webkitURL.createObjectURL() in Chrome 10+.
   var worker = new Worker(window.URL.createObjectURL(blob));
   worker.onmessage = function(e) {
-    console.log("Received: " + e.data);
+//     console.log("Received: " + e.data);
     waiting = e.data;
   }
   worker.postMessage(thresh); // Start the worker.
