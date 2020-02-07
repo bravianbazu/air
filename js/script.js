@@ -31,13 +31,13 @@ function capture(payload) {
   worker.postMessage(thresh); // Start the worker.
     
 
-  if (payload.score > 220 && waiting == true){
+  if (payload.score > 200 && waiting == true){
     
     console.log("We are waiting")
     
     }
   
-  else if (payload.score > 220 && waiting == false) {
+  else if (payload.score > 200 && waiting == false) {
     
     audio.currentTime = 0;
     audio.play()
