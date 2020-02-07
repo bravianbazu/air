@@ -1,3 +1,6 @@
+var time;
+
+
 function getchord() {
   //amajor
   if ( (E == 1) && (A == 1) && (C_ == 1) ){
