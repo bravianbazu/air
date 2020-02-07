@@ -36,12 +36,12 @@ var DiffCamEngine = (function() {
 		// incoming options with defaults
 		video = options.video || document.createElement('video');
 		motionCanvas = options.motionCanvas || document.createElement('canvas');
-		captureIntervalTime = options.captureIntervalTime || 400;
+		captureIntervalTime = options.captureIntervalTime || 50;
 		captureWidth = options.captureWidth || 640;
 		captureHeight = options.captureHeight || 480;
 		diffWidth = options.diffWidth || 64;
 		diffHeight = options.diffHeight || 48;
-		pixelDiffThreshold = options.pixelDiffThreshold || 50;
+		pixelDiffThreshold = options.pixelDiffThreshold || 52;
 		scoreThreshold = options.scoreThreshold || 16;
 		includeMotionBox = options.includeMotionBox || false;
 		includeMotionPixels = options.includeMotionPixels || false;
@@ -164,6 +164,7 @@ var DiffCamEngine = (function() {
 		diffContext.globalCompositeOperation = 'source-over';
 		diffContext.drawImage(video, 0, 0, diffWidth, diffHeight);
 		isReadyToDiff = true;
+    
 	}
 
 	function processDiff(diffImageData) {
