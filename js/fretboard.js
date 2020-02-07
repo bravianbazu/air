@@ -70,7 +70,7 @@ function update_background(ev) {
   switch (ev.targetTouches.length) {
     case 1:
       // Single tap`
-      ev.target.style.background = "yellow";   
+      ev.target.style.background = "blue";   
       break;
     case 2:
       // Two simultaneous touches
@@ -214,7 +214,7 @@ function end_handler(ev) {
   if (logEvents) log(ev.type, ev, false);
   if (ev.targetTouches.length == 0) {
     // Restore background and border to original values
-    ev.target.style.background = "white";
+    ev.target.style.background = "none";
     ev.target.style.border = "1px solid black";
     
       
