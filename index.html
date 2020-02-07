@@ -93,7 +93,7 @@
   // This script won't be parsed by JS engines because its type is javascript/worker.
   self.onmessage = function(e) {
   
-  if(e.data > 220){
+  if(e.data > 200){
       self.postMessage(true);
   } else {
     self.postMessage(false);
