@@ -1,4 +1,4 @@
-           var video = document.getElementById('video');
+var video = document.getElementById('video');
 var canvas = document.getElementById('motion');
 var score = document.getElementById('score');
 var audio = document.getElementById('audio');
@@ -14,8 +14,6 @@ function initError() {
 	alert('Something went wrong.');
 }
 
-setInterval(function(){ getchord() }, 20);
-
 function capture(payload) {
 	score.textContent = payload.score;
   thresh = payload.score;
@@ -27,7 +25,7 @@ function capture(payload) {
   // Note: window.webkitURL.createObjectURL() in Chrome 10+.
   var worker = new Worker(window.URL.createObjectURL(blob));
   worker.onmessage = function(e) {
-//     console.log("Received: " + e.data);
+    console.log("Received: " + e.data);
     waiting = e.data;
   }
   worker.postMessage(thresh); // Start the worker.
@@ -41,12 +39,12 @@ function capture(payload) {
   
   else if (payload.score > 200 && waiting == false) {
     
-    audio.currentTime = 5;
+    audio.currentTime = 0;
     audio.play()
     
   }
   
-  
+  worker.terminate;
 }
 
 // setInterval(function(){ 
