@@ -45,7 +45,7 @@ function capture(payload) {
   
   else if (payload.score > 200 && waiting == false) {
     
-    audio.currentTime = 20;
+    audio.currentTime = 100;
     audio.play()
     
   }
