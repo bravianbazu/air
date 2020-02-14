@@ -3,6 +3,7 @@ var canvas = document.getElementById('motion');
 var score = document.getElementById('score');
 var audio = document.getElementById('audio');
 
+audio.playbackRate = 2;
  var thresh = 0
  var waiting = false;
 
@@ -14,13 +15,9 @@ function initError() {
 	alert('Something went wrong.');
 }
 
-setInterval(function(){  }, 30);
-
 
 function capture(payload) {
-	
 	getchord();
-	
 	score.textContent = payload.score;
   thresh = payload.score;
   
