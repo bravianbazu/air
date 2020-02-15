@@ -1,10 +1,9 @@
 var time;
 
-
 function getchord() {
   //amajor
   if ( (E == 1) && (A == 1) && (C_ == 1) ){
-          time = audio.currentTime;
+           time = audio.currentTime;
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Famajor.wav?v=1580127638637';
     audio.currentTime = time;
       audio.play();
@@ -54,13 +53,66 @@ function getchord() {
       audio.play();
    
   }
-  else if ((f == 1)) {
+
+  
+  //=======================================================================
+  //Full Chords
+  //=======================================================================
+  
+  //amajor
+  else if ( (a_chord == 1) ){
+           time = audio.currentTime;
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Famajor.wav?v=1580127638637';
+    audio.currentTime = time;
+      audio.play();
+      }
+      
+  //cmajor
+  else if ( c_chord == 1){
     
-             time = audio.currentTime;
-    audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
+              time = audio.currentTime;
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
         audio.currentTime = time;
       audio.play();
+      }
+  //dmajor
+  else if ( (d_chord == 1)){
+    
+              time = audio.currentTime;
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fdmajor.wav?v=1580127634501'
+        audio.currentTime = time;
+      audio.play();
+    
+  }
+  //emajor
+  else if (  (e_chord == 1)){
+    
+              time = audio.currentTime;
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Femajor.wav?v=1580127634332'
+        audio.currentTime = time;
+      audio.play();
+    
+  }
+  //fmajor
+  else if (  (f_chord == 1)){
+    
+              time = audio.currentTime;
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Ffmajor.wav?v=1580127634627'
+        audio.currentTime = time;
+      audio.play();
+    
+  }
+  //gmajor
+  else if (   (g_chord == 1)){
+    
+              time = audio.currentTime;
+      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fgmajor.wav?v=1580127634513'
+        audio.currentTime = time;
+      audio.play();
+   
   }
 
+
 }
+
 
