@@ -150,7 +150,7 @@
     <figure>
       <video id="video"></video>
       <audio
-        src="https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437"
+        src="https://raw.githubusercontent.com/msimbao/air/master/chords/amajor.wav"
         id="audio"
         type="audio/wav"
         preload="auto"
@@ -200,7 +200,7 @@
       // This script won't be parsed by JS engines because its type is javascript/worker.
       self.onmessage = function(e) {
 
-      if(e.data > 180){
+      if(e.data > 210){
           self.postMessage(true);
       } else {
         self.postMessage(false);
