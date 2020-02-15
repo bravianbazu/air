@@ -25,7 +25,7 @@ var f_ = 0;
 var g = 0;
 
 var a_chord = 0;
-var b_chord = 0;
+var g_chord = 0;
 var c_chord = 0;
     
 var d_chord = 0;
@@ -195,8 +195,8 @@ function start_handler(ev) {
           case "a_chord":
           return a_chord = 1;
       
-          case "b_chord":
-          return b_chord = 1;
+          case "g_chord":
+          return g_chord = 1;
       
           case "c_chord":
           return c_chord = 1;
@@ -270,12 +270,13 @@ function end_handler(ev) {
   g = 0;
     
   a_chord = 0;
-  b_chord = 0;
-  c_chord = 0;
-    
+  c_chord = 0;  
   d_chord = 0;
+    
   e_chord = 0;
   f_chord = 0;
+  g_chord = 0;
+
   }
 }
 
@@ -321,7 +322,7 @@ function init() {
   set_handlers("g");
   
   set_handlers("a_chord");
-  set_handlers("b_chord");
+  set_handlers("g_chord");
   set_handlers("c_chord");
   
   set_handlers("d_chord");
