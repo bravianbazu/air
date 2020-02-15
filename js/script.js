@@ -48,7 +48,7 @@ function capture(payload) {
     
   }
   
-  worker.terminate;
+  worker.terminate();
 }
 
 // setInterval(function(){ 
