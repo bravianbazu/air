@@ -24,6 +24,14 @@ var f = 0;
 var f_ = 0;
 var g = 0;
 
+var a_chord = 0;
+var b_chord = 0;
+var c_chord = 0;
+    
+var d_chord = 0;
+var e_chord = 0;
+var f_chord = 0;
+
 // Log events flag
 var logEvents = false;
 
@@ -70,7 +78,7 @@ function update_background(ev) {
   switch (ev.targetTouches.length) {
     case 1:
       // Single tap`
-      ev.target.style.background = "blue";   
+      ev.target.style.background = "yellow";   
       break;
     case 2:
       // Two simultaneous touches
@@ -183,7 +191,26 @@ function start_handler(ev) {
           
           case "g":
           return g = 1;
-      }  
+          
+          case "a_chord":
+          return a_chord = 1;
+      
+          case "b_chord":
+          return b_chord = 1;
+      
+          case "c_chord":
+          return c_chord = 1;
+      
+          case "d_chord":
+          return d_chord = 1;
+      
+          case "e_chord":
+          return e_chord = 1;
+      
+          case "f_chord":
+          return f_chord = 1;
+  
+      }
 }
 
 function move_handler(ev) {
@@ -214,7 +241,7 @@ function end_handler(ev) {
   if (logEvents) log(ev.type, ev, false);
   if (ev.targetTouches.length == 0) {
     // Restore background and border to original values
-    ev.target.style.background = "none";
+    ev.target.style.background = "gray";
     ev.target.style.border = "1px solid black";
     
       
@@ -241,6 +268,14 @@ function end_handler(ev) {
   f = 0;
   f_ = 0;
   g = 0;
+    
+  a_chord = 0;
+  b_chord = 0;
+  c_chord = 0;
+    
+  d_chord = 0;
+  e_chord = 0;
+  f_chord = 0;
   }
 }
 
@@ -284,4 +319,12 @@ function init() {
   set_handlers("f");
   set_handlers("f_");
   set_handlers("g");
+  
+  set_handlers("a_chord");
+  set_handlers("b_chord");
+  set_handlers("c_chord");
+  
+  set_handlers("d_chord");
+  set_handlers("e_chord");
+  set_handlers("f_chord");
 }
