@@ -15,9 +15,10 @@ function initError() {
 	alert('Something went wrong.');
 }
 
+setInterval(function(){ getchord(); }, 30);
+
 
 function capture(payload) {
-	getchord();
 	score.textContent = payload.score;
   thresh = payload.score;
   
