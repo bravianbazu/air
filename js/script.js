@@ -3,7 +3,7 @@ var canvas = document.getElementById('motion');
 var score = document.getElementById('score');
 var audio = document.getElementById('audio');
 
-audio.playbackRate = 2;
+audio.playbackRate = 3;
  var thresh = 0
  var waiting = false;
 
@@ -43,12 +43,12 @@ function capture(payload) {
   
   else if (payload.score > 200 && waiting == false) {
     
-    audio.currentTime = 100;
+    audio.currentTime = 70;
     audio.play()
+
     
   }
   
-  worker.terminate();
 }
 
 // setInterval(function(){ 
