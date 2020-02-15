@@ -5,7 +5,8 @@ function getchord() {
   if ( (E == 1) && (A == 1) && (C_ == 1) ){
            time = audio.currentTime;
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Famajor.wav?v=1580127638637';
-  
+    audio.currentTime = time;
+      audio.play();
       }
       
   //cmajor
@@ -13,7 +14,8 @@ function getchord() {
     
               time = audio.currentTime;
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
-       
+        audio.currentTime = time;
+      audio.play();
       }
   //dmajor
   else if ((f_ == 1) && (D == 1) && (A == 1)){
@@ -29,7 +31,8 @@ function getchord() {
     
               time = audio.currentTime;
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Femajor.wav?v=1580127634332'
-    
+        audio.currentTime = time;
+      audio.play();
     
   }
   //fmajor
@@ -37,7 +40,8 @@ function getchord() {
     
               time = audio.currentTime;
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Ffmajor.wav?v=1580127634627'
-     
+        audio.currentTime = time;
+      audio.play();
     
   }
   //gmajor
@@ -45,7 +49,8 @@ function getchord() {
     
               time = audio.currentTime;
       audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fgmajor.wav?v=1580127634513'
-    
+        audio.currentTime = time;
+      audio.play();
    
   }
 
@@ -57,37 +62,37 @@ function getchord() {
   //amajor
   else if ( (a_chord == 1) ){
            time = audio.currentTime;
-      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Famajor.wav?v=1580127638637';
-
+      audio.src = 'https://raw.githubusercontent.com/msimbao/air/master/chords/amajor.wav';
+  
       }
       
   //cmajor
   else if ( c_chord == 1){
     
               time = audio.currentTime;
-      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fcmajor.wav?v=1580127634437';
-  
+      audio.src = 'https://raw.githubusercontent.com/msimbao/air/master/chords/cmajor.wav';
+      
       }
   //dmajor
   else if ( (d_chord == 1)){
     
               time = audio.currentTime;
-      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fdmajor.wav?v=1580127634501'
- 
+      audio.src = 'https://raw.githubusercontent.com/msimbao/air/master/chords/dmajor.wav'
+
     
   }
   //emajor
   else if (  (e_chord == 1)){
     
               time = audio.currentTime;
-      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Femajor.wav?v=1580127634332'
+      audio.src = 'https://raw.githubusercontent.com/msimbao/air/master/chords/emajor.wav'
     
   }
   //fmajor
   else if (  (f_chord == 1)){
     
               time = audio.currentTime;
-      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Ffmajor.wav?v=1580127634627'
+      audio.src = 'https://raw.githubusercontent.com/msimbao/air/master/chords/fmajor.wav'
 
     
   }
@@ -95,7 +100,7 @@ function getchord() {
   else if (   (g_chord == 1)){
     
               time = audio.currentTime;
-      audio.src = 'https://cdn.glitch.com/bde82fbb-ee14-4c97-a669-94a07bcbedb3%2Fgmajor.wav?v=1580127634513'
+      audio.src = 'https://raw.githubusercontent.com/msimbao/air/master/chords/gmajor.wav'
    
   }
 
