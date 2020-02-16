@@ -22,32 +22,52 @@ function capture(payload) {
 	score.textContent = payload.score;
   thresh = payload.score;
   
-         var blob = new Blob([
-    document.querySelector('#worker1').textContent
-  ], { type: "text/javascript" })
+//          var blob = new Blob([
+//     document.querySelector('#worker1').textContent
+//   ], { type: "text/javascript" })
 
-  // Note: window.webkitURL.createObjectURL() in Chrome 10+.
-  var worker = new Worker(window.URL.createObjectURL(blob));
-  worker.onmessage = function(e) {
-    console.log("Received: " + e.data);
-    waiting = e.data;
-  }
-  worker.postMessage(thresh); // Start the worker.
+//   // Note: window.webkitURL.createObjectURL() in Chrome 10+.
+//   var worker = new Worker(window.URL.createObjectURL(blob));
+//   worker.onmessage = function(e) {
+//     console.log("Received: " + e.data);
+//     waiting = e.data;
+//   }
+//   worker.postMessage(thresh); // Start the worker.
     
-
-  if (payload.score > 200 && waiting == true){
+    if (waiting == true){
     
-    console.log("We are waiting")
+    console.log("we are waiting")
     
     }
   
-  else if (payload.score > 200 && waiting == false) {
+    if (payload.score < 170){
     
-    audio.currentTime = 2;
+      waiting = false
+    
+    }
+  
+    else if (payload.score < 200 && payload.score > 170){
+    
+      waiting = true
+
+    
+    }
+
+  else if (payload.score > 200 && waiting == true){
+    
+     console.log("did not play")
+    }
+  
+  else if (payload.score >= 200 && waiting == false) {
+    
+    waiting = true;
+    audio.currentTime = 1;
     audio.play()
 
     
   }
+  
+
   
 }
 
