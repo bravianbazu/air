@@ -3,7 +3,6 @@ var canvas = document.getElementById('motion');
 var score = document.getElementById('score');
 var audio = document.getElementById('audio');
 
-audio.playbackRate = 3;
  var thresh = 0
  var waiting = false;
 
@@ -39,28 +38,31 @@ function capture(payload) {
     
     }
   
-    if (payload.score < 120){
+    if (payload.score < 130){
     
       waiting = false
     
     }
   
-    else if (payload.score < 150 && payload.score > 130){
+    else if (payload.score < 170 && payload.score > 130){
     
       waiting = true
+         console.log("did not play")
 
-    
     }
 
-  else if (payload.score > 150 && waiting == true){
+  else if (payload.score > 170 && waiting == true){
     
      console.log("did not play")
+          waiting = true
+
     }
   
-  else if (payload.score >= 150 && waiting == false) {
+  else if (payload.score >= 170 && waiting == false) {
     
+    audio.playbackRate = 2;
     waiting = true;
-    audio.currentTime = 1;
+    audio.currentTime = 1.5;
     audio.play()
 
     console.log("played")
