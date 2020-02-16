@@ -15,12 +15,11 @@ function initError() {
 	alert('Something went wrong.');
 }
 
-setInterval(function(){ getchord(); }, 30);
-
-
 function capture(payload) {
 	score.textContent = payload.score;
   thresh = payload.score;
+  
+  getchord(); 
   
 //          var blob = new Blob([
 //     document.querySelector('#worker1').textContent
@@ -40,30 +39,31 @@ function capture(payload) {
     
     }
   
-    if (payload.score < 170){
+    if (payload.score < 120){
     
       waiting = false
     
     }
   
-    else if (payload.score < 200 && payload.score > 170){
+    else if (payload.score < 150 && payload.score > 130){
     
       waiting = true
 
     
     }
 
-  else if (payload.score > 200 && waiting == true){
+  else if (payload.score > 150 && waiting == true){
     
      console.log("did not play")
     }
   
-  else if (payload.score >= 200 && waiting == false) {
+  else if (payload.score >= 150 && waiting == false) {
     
     waiting = true;
     audio.currentTime = 1;
     audio.play()
 
+    console.log("played")
     
   }
   
