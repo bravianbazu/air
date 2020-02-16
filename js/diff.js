@@ -36,7 +36,7 @@ var DiffCamEngine = (function() {
 		// incoming options with defaults
 		video = options.video || document.createElement('video');
 		motionCanvas = options.motionCanvas || document.createElement('canvas');
-		captureIntervalTime = options.captureIntervalTime || 30;
+		captureIntervalTime = options.captureIntervalTime || 80;
 		captureWidth = options.captureWidth || 64;
 		captureHeight = options.captureHeight || 48;
 		diffWidth = options.diffWidth || 64;
